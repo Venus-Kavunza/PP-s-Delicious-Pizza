@@ -1,0 +1,50 @@
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+/*Navbar*/
+.navbar {
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    color:black;
+    font-size: 25px;
+    font-weight: bolder;
+     margin-right: 70px;
+    padding: 2px  0.1px;
+    border-radius: 1px;
+}
+a.active,a:hover{
+    background: #ff9e1f;
+    transition: .5s;
+  }
+  .logotext {
+    font-style: italic;
+    padding-left: 130px;
+    margin-top: -90px;
+}
+
+/*Order*/
+.form-all{
+    background-color:grey;
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    margin-left:8em ;
+    margin-right: 8em;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .col-sm-7{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+  } 
+  .proceed{
+    background-color: aqua;
+  }
