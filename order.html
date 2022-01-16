@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Karla:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="menu.css"> 
+    <title>PP`s Delicious Pizza</title>
+</head>
+<body>
+    <!--Logo-->
+    <div class="Frame">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Order</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <label for="" class="logoimage"><img src="images/logo.png" height="30%" width="8%"</label>
+            <h1 class="logotext">PP`s Delicious Pizza</h1>
+
+
+
+<!--Order-->
+<div class="form-all">
+    <form class="form1">
+      <label for="select">Choose the flavor</label>
+      <select class="browser-default custom-select custom-select-md mb-3 name" >
+        <option value="Chicago Pizza">Chicago Pizza</option>
+        <option value="Greek Pizza">Greek Pizza</option>
+        <option value="Detroit Pizza">Detroit Pizza</option>
+        <option value="Sicilian Pizza">Sicilian Pizza</option>
+        <option value="St. Louis Pizza">St. Louis Pizza</option>
+        <option value="Neopolitan Pizza">Neopolitan Pizza</option>
+      </select>
+      <label for="select">Choose the size</label>
+      <select class="browser-default custom-select custom-select-md mb-3"id="sizes">
+        <option selected value="0">Select size here</option>
+        <option value="large">Large -- sh. 2000</option>
+        <option value="medium">Medium -- sh. 1500</option>
+        <option value="small">Small -- sh. 900</option>
+      </select>
+      <label for="ppcrust">Choose the Crust!</label>
+      <select class="browser-default custom-select custom-select-md mb-3"id="ppcrust">
+        <option selected value="0">Select your preferred crust!</option>
+        <option value="Crispy">Crispy -- ksh. 100</option>
+        <option value="Crunchy">Crunchy -- ksh. 200</option>
+        <option value="Vegan">Munchy-- ksh. 250</option>
+      </select>
+      <label for="Toppings">Select Your Toppings each at ksh. 100</label
+      ><br />
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox"class="custom-control-input"id="Ham"value="Ham" name="toppings"/>
+        <label class="custom-control-label" for="Ham">Ham</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox"class="custom-control-input"id="Onions"value="Onions" name="toppings"/>
+        <label class="custom-control-label" for="Onions">Onions</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox"class="custom-control-input"id="Tomatoes" value="Tomatoes" name="toppings"/>
+        <label class="custom-control-label" for="Tomatoes">Tomatoes</label>
+      </div>
+      <br />
+      <br />
+      <button type="submit" class="btn btn-blue proceed">Order</button>
+    </form>
+    <div class="col-sm-7">
+      <div id="info">
+        <p>Your order will be processed and delivered within 1 hour.</p>
+        <p>Have exact cash ready to pay your rider.</p>
+        <p>Reach out to us in case of any changes</p>
+        <p id="final">Your Pizza</p>
+      </div>
+      <div class="details">
+        <h2>Your Order is:</h2>
+        <div id="orders">
+          <table class="table table-sm pizzatable">
+            <thead>
+              <tr>
+                <th scope="col">Pizza Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Crust</th>
+                <th scope="col">Topping</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="ordersmade">
+              <tr>
+                <td id="ppname"></td>
+                <td id="ppsize"></td>
+                <td id="crust"></td>
+                <td id="topping"></td>
+                <td id="totals"></td>
+              </tr>
+            </tbody>
+          </table>
+          <p id="total"></p>
+          <p id="bill"></p>
+          <p id="tprice">Delivery fee is 100</p>
+          <p id="message"></p>
+        </div>
+        <button class="btn btn-blue otherPizza">
+          Want another pizza? Add here
+        </button>
+        <button class="btn btn-blue" id="checkout">Checkout</button>
+        <button class="btn btn-blue delivers">Home delivery?</button>
+      </div>
+      <div class="delivery">
+        <form>
+          <div class="form-group">
+            <input type="text"id="yourname"class="form-control mb-3"placeholder="Your Name"/>
+            <input type="number" id="phone" class="form-control mb-3"  placeholder="Pnone Number" />
+            <input type="text" id="whereto" class="form-control mb-3" placeholder="Delivery Location"/>
+            <button class="btn btn-orange" id="finaleorder">
+              Place Your Order
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/script.js"></script>
